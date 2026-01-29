@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaviqHome Hair Salon - Professional Hair Care & Styling Services</title>
+    <meta name="description" content="SaviqHome Hair Salon offers expert hair cutting, coloring, styling and treatments. Our experienced stylists provide personalized hair care solutions for all hair types. Click here to continue exploring our services and book your appointment today.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        .nav8x4m2 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav8x4m2 ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .nav8x4m2 ul li {
+            margin: 0 15px;
+        }
+        
+        .nav8x4m2 ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        
+        .nav8x4m2 ul li a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        .header9k2p {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        .header9k2p h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header9k2p p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .container7m3x {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .section5n8k {
+            background: white;
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .section5n8k h2 {
+            color: #667eea;
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #764ba2;
+            padding-bottom: 10px;
+        }
+        
+        .section5n8k h3 {
+            color: #764ba2;
+            font-size: 1.6rem;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .grid4p7q {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .card2x9m {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s;
+        }
+        
+        .card2x9m:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .card2x9m h4 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .review8k3n {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #667eea;
+        }
+        
+        .review8k3n .stars4m2x {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .review8k3n .author7n5k {
+            font-weight: bold;
+            color: #764ba2;
+            margin-top: 15px;
+        }
+        
+        .cta9x2m {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 5px;
+            font-weight: 600;
+        }
+        
+        .cta9x2m:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .footer3k8p {
+            background: #2c3e50;
+            color: white;
+            padding: 50px 20px 20px;
+            margin-top: 50px;
+        }
+        
+        .footer3k8p .footercontent5m2x {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+        
+        .footer3k8p h3 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .footer3k8p a {
+            color: #ecf0f1;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            transition: color 0.3s;
+        }
+        
+        .footer3k8p a:hover {
+            color: #667eea;
+        }
+        
+        .modal6k9p {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            overflow: auto;
+        }
+        
+        .modalcontent3x7m {
+            background-color: white;
+            margin: 50px auto;
+            padding: 40px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .close8m4k {
+            color: #aaa;
+            float: right;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 20px;
+        }
+        
+        .close8m4k:hover {
+            color: #000;
+        }
+        
+        .timeline7x3m {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timelineitem4k8n {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+        
+        .timelineitem4k8n h4 {
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+        
+        .imgcontainer2m9x {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .imgcontainer2m9x img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .highlight5k2p {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .infobanner8x4m {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .header9k2p h1 {
+                font-size: 2rem;
+            }
+            
+            .nav8x4m2 ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav8x4m2 ul li {
+                margin: 5px 0;
+            }
+            
+            .section5n8k {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav8x4m2">
+        <ul>
+            <li><a href="#home9x2k">Home</a></li>
+            <li><a href="#services4m8p">Services</a></li>
+            <li><a href="#about7k3n">About Us</a></li>
+            <li><a href="#history2x9m">Our History</a></li>
+            <li><a href="#team5k8p">Our Team</a></li>
+            <li><a href="#techniques9m4x">Hair Techniques</a></li>
+            <li><a href="#reviews3k7m">Reviews</a></li>
+            <li><a href="#care8x2n">Hair Care Tips</a></li>
+            <li><a href="#contact6m9k">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="header9k2p" id="home9x2k">
+        <h1>SaviqHome Hair Salon</h1>
+        <p>Your Trusted Partner for Beautiful, Healthy Hair Since 2008</p>
+    </header>
+
+    <div class="container7m3x">
+        <section class="section5n8k" id="services4m8p">
+            <h2>Our Professional Hair Services</h2>
+            <p>At SaviqHome Hair Salon, we specialize in transforming your hair vision into reality. Our experienced stylists bring years of expertise and passion to every appointment. Whether you're looking for a fresh new cut, vibrant color transformation, or restorative treatment, we have the skills and knowledge to exceed your expectations. <a href="#contact6m9k" class="cta9x2m">Click here to continue</a> and discover how we can help you achieve your perfect look.</p>
+            
+            <div class="grid4p7q">
+                <div class="card2x9m">
+                    <h4>Precision Hair Cutting</h4>
+                    <p>Our master stylists utilize advanced cutting techniques to create shapes that complement your facial structure and lifestyle. From classic bobs to modern layered styles, we ensure every cut enhances your natural beauty. Each session includes a thorough consultation to understand your preferences and hair characteristics.</p>
+                </div>
+                
+                <div class="card2x9m">
+                    <h4>Color Transformation Services</h4>
+                    <p>Experience stunning color results with our comprehensive coloring services. We work with high-quality products that protect your hair while delivering vibrant, long-lasting results. Our colorists are trained in balayage, ombre, highlights, lowlights, and full color applications.</p>
+                </div>
+                
+                <div class="card2x9m">
+                    <h4>Hair Treatment Solutions</h4>
+                    <p>Restore and rejuvenate your hair with our specialized treatment services. We offer deep conditioning, keratin smoothing, protein treatments, and scalp therapies designed to address specific hair concerns and improve overall hair health.</p>
+                </div>
+                
+                <div class="card2x9m">
+                    <h4>Special Event Styling</h4>
+                    <p>Make your special occasions unforgettable with our expert styling services. From weddings to proms, corporate events to photo shoots, our team creates stunning updos, elegant waves, and sophisticated styles that last all day.</p>
+                </div>
+                
+                <div class="card2x9m">
+                    <h4>Texture Services</h4>
+                    <p>Transform your hair texture with our professional perming and straightening services. Whether you want to add volume and curl or achieve sleek, straight locks, we use gentle techniques that maintain hair integrity.</p>
+                </div>
+                
+                <div class="card2x9m">
+                    <h4>Hair Extension Application</h4>
+                    <p>Add length, volume, or both with our professional hair extension services. We offer various application methods including tape-in, clip-in, and bonded extensions, all customized to blend seamlessly with your natural hair.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section5n8k" id="about7k3n">
+            <h2>About SaviqHome Hair Salon</h2>
+            <div class="imgcontainer2m9x">
+                <img src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg" alt="Hair Salon Interior">
+            </div>
+            <p>SaviqHome Hair Salon has been a cornerstone of professional hair care in our community for over fifteen years. Our mission is to provide exceptional hair services in a welcoming, comfortable environment where every client feels valued and pampered. We believe that great hair starts with understanding each individual's unique needs, lifestyle, and personal style preferences.</p>
+            
+            <p>Our salon combines traditional hairdressing expertise with modern techniques and trends. We continuously invest in education and training to ensure our team stays current with the latest developments in hair care, cutting, and coloring. This commitment to excellence has earned us a loyal clientele who trust us with their hair care needs year after year.</p>
+            
+            <div class="infobanner8x4m">
+                <h3>Why Choose SaviqHome?</h3>
+                <p>We prioritize your satisfaction above all else. Every service is customized to your specific needs, and we never rush through appointments. Your hair deserves the time and attention necessary to achieve outstanding results.</p>
+            </div>
+            
+            <h3>Our Salon Philosophy</h3>
+            <p>We believe that beautiful hair is healthy hair. That's why we focus not just on styling, but on maintaining and improving the overall health and condition of your hair. Our stylists take the time to assess your hair's current state, discuss your goals, and recommend treatments and products that will help you achieve and maintain your desired look.</p>
+            
+            <p>Sustainability and responsibility are important to us. We carefully select products that are effective while being mindful of environmental impact. Our salon practices include proper waste management, energy-efficient equipment, and supporting brands that share our values.</p>
+        </section>
+
+        <section class="section5n8k" id="history2x9m">
+            <h2>Our Journey Through The Years</h2>
+            <p>The story of SaviqHome Hair Salon is one of passion, dedication, and continuous growth. What started as a small neighborhood salon has evolved into a respected establishment known for quality service and exceptional results.</p>
+            
+            <div class="timeline7x3m">
+                <div class="timelineitem4k8n">
+                    <h4>2008 - The Beginning</h4>
+                    <p>SaviqHome Hair Salon opened its doors in a modest 800 square foot space with just three styling stations. Founder Maria Saviqhome had a vision to create a salon where technical expertise met genuine care for clients. Those early days were filled with long hours, building relationships one client at a time, and establishing the reputation for quality that would become our hallmark.</p>
+                </div>
+                
+                <div class="timelineitem4k8n">
+                    <h4>2011 - Expansion and Growth</h4>
+                    <p>As word spread about our exceptional services, demand grew beyond our capacity. We expanded to a larger location with eight styling stations, added a dedicated color bar, and brought on four additional experienced stylists. This period marked our transition from a small startup to an established salon with a growing reputation.</p>
+                </div>
+                
+                <div class="timelineitem4k8n">
+                    <h4>2014 - Innovation and Education</h4>
+                    <p>We launched our continuing education program, bringing in renowned hairstylists and colorists to train our team in advanced techniques. This investment in our staff's development allowed us to offer cutting-edge services and stay ahead of industry trends. We also introduced our first signature treatment line, developed specifically for our clients' needs.</p>
+                </div>
+                
+                <div class="timelineitem4k8n">
+                    <h4>2017 - Community Recognition</h4>
+                    <p>Our commitment to excellence was recognized when we received the Community Choice Award for Best Hair Salon. This honor reflected not just our technical skills, but the relationships we'd built with our clients and our involvement in local community events and charitable initiatives.</p>
+                </div>
+                
+                <div class="timelineitem4k8n">
+                    <h4>2020 - Adapting and Thriving</h4>
+                    <p>When challenges arose, we adapted our operations to ensure client and staff safety while maintaining our service standards. We implemented enhanced sanitation protocols, upgraded our ventilation systems, and introduced flexible scheduling options. Our loyal clients appreciated our dedication to their wellbeing.</p>
+                </div>
+                
+                <div class="timelineitem4k8n">
+                    <h4>2023 - Present Day</h4>
+                    <p>Today, SaviqHome Hair Salon operates with a team of twelve skilled professionals, serving hundreds of satisfied clients each month. We've maintained our commitment to personalized service while embracing new technologies and techniques. Our journey continues as we look forward to many more years of helping people look and feel their best.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section5n8k" id="team5k8p">
+            <h2>Meet Our Expert Team</h2>
+            <div class="imgcontainer2m9x">
+                <img src="https://images.pexels.com/photos/3992870/pexels-photo-3992870.jpeg" alt="Professional Hair Stylists">
+            </div>
+            <p>Our team is the heart of SaviqHome Hair Salon. Each stylist brings unique skills, perspectives, and creativity to their work. We're united by our passion for hair care and our commitment to making every client feel special.</p>
+            
+            <div class="grid4p7q">
+                <div class="card2x9m">
+                    <h4>Maria Saviqhome - Founder & Master Stylist</h4>
+                    <p>With over 20 years of experience, Maria specializes in precision cutting and color correction. She trained at prestigious academies in New York and Paris, bringing international expertise to every service. Maria's philosophy centers on enhancing natural beauty through customized styling approaches.</p>
+                </div>
+                
+                <div class="card2x9m">
+                    <h4>Jennifer Thompson - Senior Colorist</h4>
+                    <p>Jennifer has been creating stunning color transformations for 15 years. Her expertise in balayage and dimensional coloring has made her one of our most requested stylists. She has a particular talent for creating natural-looking highlights that complement skin tone and personal style.</p>
+                </div>
+                
+                <div class="card2x9m">
+                    <h4>Michael Rodriguez - Cutting Specialist</h4>
+                    <p>Michael's precision cutting skills and eye for detail have earned him a devoted following. He excels at creating modern, wearable styles that suit busy lifestyles. His consultations are thorough, ensuring clients leave with cuts that work for their hair type and daily routine.</p>
+                </div>
+                
+                <div class="card2x9m">
+                    <h4>Sarah Chen - Texture Expert</h4>
+                    <p>Sarah specializes in working with all hair textures and types. Her knowledge of curly hair care, smoothing treatments, and texture transformation is extensive. She's passionate about helping clients embrace and enhance their natural texture or achieve their desired look through professional treatments.</p>
+                </div>
+                
+                <div class="card2x9m">
+                    <h4>David Patterson - Style Director</h4>
+                    <p>David leads our special events styling team with creativity and precision. His updos and formal styling work has been featured in local publications. He works closely with clients to create looks that photograph beautifully and last throughout their special occasions.</p>
+                </div>
+                
+                <div class="card2x9m">
+                    <h4>Amanda Foster - Treatment Specialist</h4>
+                    <p>Amanda focuses on hair health and restoration. Her deep conditioning treatments, scalp therapies, and damage repair protocols have helped countless clients restore their hair's vitality. She takes a holistic approach, considering lifestyle factors that affect hair health.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section5n8k" id="techniques9m4x">
+            <h2>Advanced Hair Techniques We Master</h2>
+            <p>At SaviqHome, we pride ourselves on staying current with the latest hair techniques while honoring time-tested methods. Our stylists regularly attend workshops and training sessions to refine their skills and learn new approaches. <a href="#contact6m9k" class="cta9x2m">Click here to continue</a> reading about our specialized techniques.</p>
+            
+            <h3>Balayage and Hand-Painted Color</h3>
+            <div class="imgcontainer2m9x">
+                <img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg" alt="Hair Coloring Process">
+            </div>
+            <p>Balayage is a freehand painting technique that creates natural-looking, sun-kissed highlights. Unlike traditional foil highlighting, balayage allows for more creative placement and softer, more blended results. Our colorists have mastered this technique, customizing each application to complement your natural color and desired outcome. The result is dimensional color that grows out beautifully with minimal maintenance.</p>
+            
+            <h3>Precision Point Cutting</h3>
+            <p>Point cutting is a texturizing technique that creates soft, natural-looking edges and removes bulk without sacrificing length. Our stylists use this method to add movement and dimension to haircuts, creating styles that are easier to manage and style at home. This technique is particularly effective for thick hair that needs weight removal or fine hair that needs texture and body.</p>
+            
+            <h3>Keratin Smoothing Systems</h3>
+            <p>Our keratin treatments use advanced formulations to smooth frizz, reduce styling time, and improve hair manageability. Unlike older straightening methods, modern keratin systems work with your hair's natural texture, enhancing rather than completely altering it. Results typically last three to five months, and the treatment actually improves hair health over time.</p>
+            
+            <h3>Dimensional Highlighting Techniques</h3>
+            <p>We employ various highlighting methods including foiling, cap highlighting, and combination techniques to create depth and dimension. Our approach considers your natural base color, skin tone, and maintenance preferences. Whether you want subtle enhancement or dramatic transformation, we customize the technique to achieve your goals.</p>
+            
+            <h3>Razor Cutting Methods</h3>
+            <p>Razor cutting creates soft, feathered edges and is excellent for creating textured, lived-in looks. Our stylists are trained in proper razor techniques that enhance hair's natural movement without causing damage. This method is particularly effective for creating modern, effortless styles.</p>
+            
+            <h3>Color Melting and Blending</h3>
+            <p>Color melting is a technique where multiple shades are seamlessly blended together, creating a gradient effect with no harsh lines. This approach results in low-maintenance color that grows out beautifully. Our colorists carefully select complementary shades that work harmoniously with your natural color.</p>
+        </section>
+
+        <section class="section5n8k" id="reviews3k7m">
+            <h2>What Our Clients Say</h2>
+            <p>Client satisfaction is our greatest achievement. Here's what people are saying about their experiences at SaviqHome Hair Salon:</p>
+            
+            <div class="review8k3n">
+                <div class="stars4m2x">★★★★★</div>
+                <p>"I've been going to SaviqHome for three years now and wouldn't trust anyone else with my hair. Jennifer is amazing with color - she always knows exactly what will work for my skin tone and lifestyle. The salon is always clean, the staff is friendly, and I never feel rushed. Every appointment feels like a treat!"</p>
+                <div class="author7n5k">- Rebecca Martinez</div>
+            </div>
+            
+            <div class="review8k3n">
+                <div class="stars4m2x">★★★★★</div>
+                <p>"After years of bad haircuts at chain salons, I finally found SaviqHome. Michael gave me the best cut I've ever had. He actually listened to what I wanted and made suggestions based on my hair type. Three months later, my hair still looks great and is so easy to style. Worth every penny!"</p>
+                <div class="author7n5k">- Thomas Anderson</div>
+            </div>
+            
+            <div class="review8k3n">
+                <div class="stars4m2x">★★★★★</div>
+                <p>"I came to SaviqHome with severely damaged hair from years of home coloring. Amanda worked magic with her treatment plan. After four sessions, my hair is healthier than it's been in years. She educated me on proper care and recommended products that actually work. I'm so grateful for her expertise!"</p>
+                <div class="author7n5k">- Linda Chen</div>
+            </div>
+            
+            <div class="review8k3n">
+                <div class="stars4m2x">★★★★★</div>
+                <p>"David did my hair for my wedding and it was absolutely perfect. He listened to my ideas, showed me pictures of different styles, and created exactly what I envisioned. My hair looked beautiful all day and night, even through dancing and humidity. All my bridesmaids were impressed too!"</p>
+                <div class="author7n5k">- Emily Richardson</div>
+            </div>
+            
+            <div class="review8k3n">
+                <div class="stars4m2x">★★★★★</div>
+                <p>"As someone with very curly hair, I've struggled to find stylists who know how to work with my texture. Sarah at SaviqHome is incredible. She understands curly hair and gave me a cut that enhanced my natural curl pattern. She also taught me proper styling techniques. Finally, a stylist who gets it!"</p>
+                <div class="author7n5k">- Marcus Johnson</div>
+            </div>
+            
+            <div class="review8k3n">
+                <div class="stars4m2x">★★★★★</div>
+                <p>"I've been a client since SaviqHome opened and have watched them grow while maintaining their commitment to quality. Maria is not just talented, she's genuinely caring and makes every visit enjoyable. The entire team is professional and skilled. This salon sets the standard for what a hair salon should be."</p>
+                <div class="author7n5k">- Patricia Williams</div>
+            </div>
+            
+            <div class="review8k3n">
+                <div class="stars4m2x">★★★★★</div>
+                <p>"I was nervous about getting highlights for the first time, but Jennifer made the whole experience comfortable and fun. She explained everything she was doing and why, and the results exceeded my expectations. The color looks so natural and has brightened up my whole appearance. I get compliments constantly!"</p>
+                <div class="author7n5k">- Sarah Mitchell</div>
+            </div>
+        </section>
+
+        <section class="section5n8k" id="care8x2n">
+            <h2>Professional Hair Care Guidance</h2>
+            <div class="imgcontainer2m9x">
+                <img src="https://images.pexels.com/photos/3993212/pexels-photo-3993212.jpeg" alt="Hair Care Products">
+            </div>
+            <p>Maintaining beautiful hair between salon visits requires proper care and the right products. Our stylists have compiled their best advice for keeping your hair healthy, vibrant, and manageable at home. <a href="#contact6m9k" class="cta9x2m">Click here to continue</a> learning about professional hair care.</p>
+            
+            <h3>Understanding Your Hair Type</h3>
+            <p>The first step in proper hair care is understanding your hair's unique characteristics. Hair can be categorized by texture (straight, wavy, curly, coily), density (thin, medium, thick), and porosity (how well it absorbs and retains moisture). Each combination requires different care approaches. During your consultation, we assess these factors to recommend the most effective care routine for your specific hair type.</p>
+            
+            <h3>Washing Frequency and Technique</h3>
+            <p>Contrary to popular belief, daily washing isn't necessary for most hair types and can actually strip natural oils that keep hair healthy. Fine hair may need more frequent washing, while thick or curly hair often benefits from less frequent cleansing. When you do wash, focus shampoo on the scalp where oil accumulates, and apply conditioner from mid-length to ends where hair needs moisture most.</p>
+            
+            <h3>Heat Styling Protection</h3>
+            <p>Heat styling tools can cause significant damage if used improperly. Always apply a heat protectant product before using blow dryers, flat irons, or curling tools. Keep tools moving rather than holding them in one spot, and use the lowest effective temperature setting. Air drying when possible gives your hair a break from heat exposure.</p>
+            
+            <h3>Deep Conditioning Treatments</h3>
+            <p>Regular deep conditioning treatments are essential for maintaining hair health, especially if you color or heat style your hair. These intensive treatments penetrate the hair shaft to repair damage and restore moisture. We recommend professional treatments every four to six weeks, supplemented with at-home masks weekly for optimal results.</p>
+            
+            <h3>Protecting Color-Treated Hair</h3>
+            <p>Color-treated hair requires special care to maintain vibrancy and prevent fading. Use sulfate-free shampoos formulated for color-treated hair, wash with cool water (hot water opens the cuticle and releases color), and minimize sun exposure which can fade color. Regular toning treatments help maintain your desired shade between coloring appointments.</p>
+            
+            <h3>Nighttime Hair Care</h3>
+            <p>How you treat your hair at night affects its condition and appearance. Sleeping on silk or satin pillowcases reduces friction that causes breakage and frizz. For long hair, loose braids or buns prevent tangling. Avoid going to bed with wet hair, which is more vulnerable to damage and can lead to breakage.</p>
+            
+            <h3>Nutrition and Hair Health</h3>
+            <p>Healthy hair starts from within. A balanced diet rich in proteins, vitamins, and minerals supports hair growth and strength. Biotin, vitamin E, omega-3 fatty acids, and iron are particularly important for hair health. Staying hydrated also contributes to hair moisture and overall condition.</p>
+            
+            <h3>Trimming and Maintenance</h3>
+            <p>Regular trims every six to eight weeks prevent split ends from traveling up the hair shaft and causing more extensive damage. Even if you're growing your hair out, small trims maintain shape and health. Think of trims as preventive maintenance that keeps your hair looking its best.</p>
+        </section>
+
+        <section class="section5n8k" id="contact6m9k">
+            <h2>Visit Us Today</h2>
+            <p>Ready to experience the SaviqHome difference? We'd love to welcome you to our salon and help you achieve your hair goals. Our friendly team is here to answer questions, provide consultations, and schedule your appointment at a time that works for your schedule.</p>
+            
+            <div class="infobanner8x4m">
+                <h3>New Client Special</h3>
+                <p>First-time visitors receive a complimentary consultation and hair analysis with any service. We want to ensure we understand your needs and can deliver results that exceed your expectations.</p>
+            </div>
+            
+            <h3>Booking Your Appointment</h3>
+            <p>We recommend booking appointments in advance to ensure availability with your preferred stylist. Walk-ins are welcome when scheduling permits, but appointments guarantee your spot and allow us to allocate appropriate time for your service. When booking, let us know if you have any specific concerns or goals so we can prepare accordingly.</p>
+            
+            <h3>What to Expect During Your Visit</h3>
+            <p>Your appointment begins with a thorough consultation where we discuss your hair history, current concerns, and desired outcomes. We'll examine your hair's condition, texture, and growth patterns to create a customized service plan. Throughout your service, we'll explain what we're doing and why, ensuring you're comfortable and informed. Before you leave, we'll provide styling tips and product recommendations to help you maintain your new look at home.</p>
+            
+            <h3>Salon Policies</h3>
+            <p>We ask that clients arrive on time for appointments to ensure adequate service time. If you need to reschedule, please provide at least 24 hours notice. We maintain a clean, comfortable environment and follow strict sanitation protocols for all tools and workstations. Your safety and comfort are our top priorities.</p>
+            
+            <div style="margin-top: 30px; text-align: center;">
+                <a href="tel:+15558742390" class="cta9x2m">Call Us: (555) 874-2390</a>
+                <p style="margin-top: 20px; font-size: 1.1rem;">We look forward to serving you!</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer3k8p">
+        <div class="footercontent5m2x">
+            <div>
+                <h3>SaviqHome Hair Salon</h3>
+                <p>Professional hair care services delivered with expertise and care. Your satisfaction is our commitment.</p>
+                <p style="margin-top: 15px;">Serving our community since 2008</p>
+            </div>
+            
+            <div>
+                <h3>Contact Information</h3>
+                <p><strong>Phone:</strong> <a href="tel:+15558742390">(555) 874-2390</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@saviqhome.com">info@saviqhome.com</a></p>
+                <p><strong>Address:</strong> 2847 Riverside Avenue, Suite 120</p>
+                <p>Springfield, ST 62704</p>
+            </div>
+            
+            <div>
+                <h3>Hours of Operation</h3>
+                <p>Monday: Closed</p>
+                <p>Tuesday - Friday: 9:00 AM - 7:00 PM</p>
+                <p>Saturday: 8:00 AM - 6:00 PM</p>
+                <p>Sunday: 10:00 AM - 4:00 PM</p>
+            </div>
+            
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#services4m8p">Our Services</a>
+                <a href="#team5k8p">Meet Our Team</a>
+                <a href="#reviews3k7m">Client Reviews</a>
+                <a href="#" onclick="openModal('privacy'); return false;">Privacy Policy</a>
+                <a href="#" onclick="openModal('terms'); return false;">Terms of Service</a>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #34495e;">
+            <p>&copy; 2024 SaviqHome Hair Salon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="privacyModal" class="modal6k9p">
+        <div class="modalcontent3x7m">
+            <span class="close8m4k" onclick="closeModal('privacy')">&times;</span>
+            <h2>Privacy Policy</h2>
+            <p><strong>Last Updated: January 2024</strong></p>
+            
+            <h3>Information We Collect</h3>
+            <p>SaviqHome Hair Salon collects information necessary to provide our services and improve your experience. This includes personal identification information such as your name, phone number, email address, and appointment history. We collect this information when you book appointments, sign up for our services, or communicate with us.</p>
+            
+            <h3>How We Use Your Information</h3>
+            <p>We use collected information to schedule and confirm appointments, send appointment reminders, communicate about services and promotions, maintain client records for service continuity, and improve our services based on feedback and preferences. We may also use your information to send periodic emails about new services, special offers, or other information we think you may find interesting.</p>
+            
+            <h3>Information Protection</h3>
+            <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. This includes internal reviews of our data collection, storage, and processing practices, as well as physical security measures to guard against unauthorized access to systems where we store personal data.</p>
+            
+            <h3>Information Sharing</h3>
+            <p>We do not sell, trade, or rent your personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information with business partners and trusted affiliates for the purposes outlined above. We may use third-party service providers to help us operate our business and administer activities on our behalf, such as sending out newsletters or surveys.</p>
+            
+            <h3>Your Rights</h3>
+            <p>You have the right to access, correct, or delete your personal information at any time. You may opt out of receiving promotional communications from us by following the unsubscribe instructions in those communications or by contacting us directly. You may also request that we restrict processing of your personal information or object to processing in certain circumstances.</p>
+            
+            <h3>Cookies and Tracking</h3>
+            <p>Our website may use cookies to enhance user experience. Your web browser places cookies on your hard drive for record-keeping purposes and sometimes to track information about you. You may choose to set your web browser to refuse cookies or to alert you when cookies are being sent.</p>
+            
+            <h3>Changes to Privacy Policy</h3>
+            <p>SaviqHome Hair Salon reserves the right to update this privacy policy at any time. When we do, we will revise the updated date at the top of this page. We encourage you to frequently check this page for any changes to stay informed about how we are protecting the personal information we collect.</p>
+            
+            <h3>Contact Us</h3>
+            <p>If you have questions about this Privacy Policy, please contact us at <a href="tel:+15558742390">(555) 874-2390</a> or <a href="mailto:info@saviqhome.com">info@saviqhome.com</a>.</p>
+        </div>
+    </div>
+
+    <div id="termsModal" class="modal6k9p">
+        <div class="modalcontent3x7m">
+            <span class="close8m4k" onclick="closeModal('terms')">&times;</span>
+            <h2>Terms of Service</h2>
+            <p><strong>Last Updated: January 2024</strong></p>
+            
+            <h3>Acceptance of Terms</h3>
+            <p>By booking an appointment or using services at SaviqHome Hair Salon, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services. We reserve the right to modify these terms at any time, and such modifications shall be effective immediately upon posting.</p>
+            
+            <h3>Appointment Scheduling and Cancellation</h3>
+            <p>Appointments can be scheduled by phone or in person. We require at least 24 hours notice for cancellations or rescheduling. Late cancellations or no-shows may result in a cancellation fee. We understand that emergencies happen and will work with clients on a case-by-case basis. Repeated late cancellations or no-shows may result in requiring a deposit for future appointments.</p>
+            
+            <h3>Service Expectations</h3>
+            <p>We strive to provide excellent service and results that meet or exceed your expectations. However, hair services involve variables including hair condition, previous treatments, and individual hair characteristics that can affect outcomes. We conduct thorough consultations to set realistic expectations and will work with you to achieve the best possible results for your hair.</p>
+            
+            <h3>Client Responsibilities</h3>
+            <p>Clients are expected to arrive on time for appointments, provide accurate information about hair history and any allergies or sensitivities, follow aftercare instructions provided by stylists, and communicate openly about concerns or dissatisfaction. Clients should disclose any medical conditions or medications that might affect hair services.</p>
+            
+            <h3>Payment Terms</h3>
+            <p>Payment is due at the time services are rendered. We accept cash, credit cards, and debit cards. Prices are subject to change without notice. Any promotional offers or discounts cannot be combined unless specifically stated. Gift certificates are available and make great gifts for friends and family.</p>
+            
+            <h3>Satisfaction Guarantee</h3>
+            <p>Your satisfaction is important to us. If you are not completely satisfied with your service, please contact us within 48 hours. We will work with you to address your concerns, which may include adjustments or corrections at no additional charge. This guarantee does not apply to services where client instructions were followed as requested or where client-provided products were used.</p>
+            
+            <h3>Liability Limitations</h3>
+            <p>While we take every precaution to ensure safe, quality services, SaviqHome Hair Salon is not liable for allergic reactions to products (when patch tests were declined), results from services performed elsewhere prior to our services, or damage resulting from failure to follow aftercare instructions. We carry appropriate insurance and follow industry best practices to minimize risks.</p>
+            
+            <h3>Product Sales</h3>
+            <p>Professional hair care products are available for purchase. All product sales are final. We stand behind the products we sell and will help you select appropriate products for your hair type and needs. Returns or exchanges are only accepted for unopened products with receipt within 14 days of purchase.</p>
+            
+            <h3>Conduct Policy</h3>
+            <p>We maintain a professional, respectful environment for all clients and staff. Inappropriate behavior, harassment, or disrespect toward staff or other clients will not be tolerated and may result in termination of services and refusal of future appointments. We reserve the right to refuse service to anyone for any reason.</p>
+            
+            <h3>Contact Information</h3>
+            <p>For questions about these Terms of Service, please contact us at <a href="tel:+15558742390">(555) 874-2390</a> or visit us at 2847 Riverside Avenue, Suite 120, Springfield, ST 62704.</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(type) {
+            if(type === 'privacy') {
+                document.getElementById('privacyModal').style.display = 'block';
+            } else if(type === 'terms') {
+                document.getElementById('termsModal').style.display = 'block';
+            }
+        }
+        
+        function closeModal(type) {
+            if(type === 'privacy') {
+                document.getElementById('privacyModal').style.display = 'none';
+            } else if(type === 'terms') {
+                document.getElementById('termsModal').style.display = 'none';
+            }
+        }
+        
+        window.onclick = function(event) {
+            if(event.target.className === 'modal6k9p') {
+                event.target.style.display = 'none';
+            }
+        }
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
